@@ -1,1 +1,108 @@
 /*  your css code here. If applicable */
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+           
+        }
+
+        .hero img {
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            width: 30%;
+            padding: 80px 60px;
+            
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 600;
+            
+            margin-bottom: 30px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #999;
+            margin-bottom: 40px;
+            line-height: 1.5;
+            max-width: 280px;
+        }
+
+        .explore-btn {
+            padding: 14px 28px;
+            background-color: #e60023;
+            color: white;
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .explore-btn:hover {
+            background-color: #ad081b;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .hero img {
+                width: 100%;
+                height: 50vh;
+            }
+
+            .hero-content {
+                width: 100%;
+                padding: 40px 30px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content {
+                padding: 30px 20px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
